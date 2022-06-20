@@ -3,3 +3,8 @@
     margin: 0 auto;
     text-align: center;
 }
+
+.site-slider .slide-img {
+    width: 100px;
+    height: 150px;
+}
