@@ -1,3 +1,11 @@
+//work with car
+
+car1.start();
+window.alert(car1.isTurnOn);
+window.alert(car1.speed);
+window.alert(car1.engine.isTurnOn);
+
+
 // find element
 var showPrevBtn = document.getElementById('show-prev');
 var showNextBtn = document.getElementById('show-next');
