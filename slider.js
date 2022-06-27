@@ -6,9 +6,17 @@ var slider1 = {
     slideImg: document.getElementById('slide-img'),
 
     methodStart: function () {
+
+        var that = this; // to ivoide error NaN
+
         //subscribe events
-        this.showPrevBtn.addEventListener('click', this.onShowPrevBtnClick),
-        this.showNextBtn.addEventListener('click', this.onShowNextBtnClick),
+        this.showPrevBtn.addEventListener('click', function (e) {
+            that.onShowPrevBtnClick(e);
+        });
+
+        this.showNextBtn.addEventListener('click', function (e) {
+            that.onShowNextBtnClick(e);
+        });
 
 
         //creating image array
